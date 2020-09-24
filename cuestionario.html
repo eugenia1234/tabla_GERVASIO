@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Formulario de abueletes</h1>
+    <form>
+      <label for="first-name">Nombre</label><br />
+      <input type="text" name="first-name" id="first-name" required />
+      <br />
+      <br />
+      <label for="surname">Apellidos</label><br />
+      <input type="text" name="surname" id="surname" required />
+      <br />
+      <br />
+      <label for="rango de edad">Rango de edad</label>
+      <select id="rango de edad" name="rango de edad">
+        <option value="" selected>Recuerda que aún eres jóveno</option>
+
+        <option value="Entre 55-65">Entre 55-65</option>
+        <option value="Entre 66-75">Entre 66-75</option>
+        <option value="Entre 76-85">Entre 76-85</option>
+        <option value="Entre 86-95">Entre 86-95</option>
+        <option value="Eres el primer inmortal">Eres el primer inmortal</option>
+      </select>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" id="Sexo" name="Sexo" value=">Sexo"/>
+        <label for="Hombre">Hombre</label>
+        <br />
+        <input type="radio" id="Sexo" name="Sexo" value="Sexo"/>
+        <label for="Mujer">Mujer</label>
+        <br />
+        <input type="radio" id="No sé" name="No sé" value=">No sé" />
+        <label for="No sé">No sé</label>
+      </fieldset>
+      <br>
+      <p>¿Te sientes abuelillo?</p>
+      <form action="/action_page.php">
+        <input type="checkbox" id="Si" name="Si" value="Si">
+        <label for="vehicle1"> Si</label><br>
+        <input type="checkbox" id="Mucho" name="Mucho" value="Mucho">
+        <label for="Mucho">Mucho</label><br>
+        <input type="checkbox" id="¿Y a ti que te importa?" name="¿Y a ti que te importa?" value="¿Y a tí que te importa?">
+        <label for="¿Y a ti que te importa?"> ¿Y a ti que te importa?</label><br><br>
+      </form> 
+      <br />
+      <label for="description"><b>¿Prefieres Kukident, o Corega Ultra? ¿Por qué?</b></label><br />
+      <br>
+      <textarea
+        name="description"
+        id="description"
+        rows="20"
+        cols="70"
+      ></textarea>
+      <br />
+      <br />
+      <p><b>Ponte las gafas:</b></p>
+
+      <form action="/action_page.php" autocomplete="on">
+        <label for="Correo electrónico">Correo electrónico</label>
+        <input type="text" id="Correo electrónico" name="Correo electrónico"><br><br>
+        <label for="email">Teléfono</label>
+        <input type="text" id=Teléfono name=Teléfono><br><br>
+        <br />
+        <p><b>Indique el grado de satisfacción de este cuestionario:</b></p>
+        <p>(Siendo 0 NADA satisfactorio, y 10 MUY satisfactorio)</p>
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          0
+          <input type="range" id="a" name="a" value="50">
+          10
+        </form>
+        <br />
+        <input type="submit" value="Enviar mis datos 🦄" />
+    </form>
+      <br />
+    </form>
+  </body>
+</html>
